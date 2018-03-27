@@ -35,7 +35,7 @@ This Code Pattern contains several pieces. The app server communicates with the 
 
 ## Deploy the Server Application to IBM Cloud
 
-[![Deploy to IBM Cloud](https://metrics-tracker.mybluemix.net/stats/d3843fa56f1316f27c4d4c7e7f917ef8/button.svg)](https://bluemix.net/deploy?repository=https://github.com/IBM/watson-calorie-counter)
+[![Deploy to IBM Cloud](https://metrics-tracker.mybluemix.net/stats/d3843fa56f1316f27c4d4c7e7f917ef8/button.svg)](https://bluemix.net/deploy?repository=https://github.com/TuurDutoit/banana-server)
 
 1. Press the above ``Deploy to IBM Cloud`` button and then click on ``Deploy``.
 
