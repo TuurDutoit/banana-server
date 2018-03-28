@@ -24,10 +24,9 @@ const express = require("express");
 const application = express();
 const formidable = require("formidable");
 const vcapServices = require("vcap_services");
-const credentials = vcapServices.getCredentials("watson_vision_combined");
 
 const visual_recognition = watson.visual_recognition({
-    api_key: credentials.api_key,
+    api_key: "842f7531f53b571f2df559b2621abdeaf9f56612",
     version: "v3",
     version_date: "2016-05-20"
 });
