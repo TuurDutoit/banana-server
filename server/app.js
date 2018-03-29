@@ -48,8 +48,11 @@ application.post("/uploadpic", function (req, result) {
                 if (err) {
                     console.log(err);
                 } else {
-                    const labelsvr = JSON.parse(JSON.stringify(res)).images[0].classifiers[0];
-                    result.send({data: labelsvr});
+                    const classifier = JSON.parse(JSON.stringify(res)).images[0].classifiers[0];
+                    const classes = classifier.data.classes
+                        .filter(c => c.score > 0.75)
+                        .map(c => c.class);
+                    result.send({classes});
                 }
             });
         }
